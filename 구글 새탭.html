@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        div{
+            border: 1px solid black;
+        }
+
+        .header{
+            display: flex;
+            justify-content: end;
+        }
+
+
+        .header > div{
+            display: flex;
+            align-items: center;
+        }
+
+        .header a{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+
+            color: black;
+            text-decoration: none;
+
+        }
+
+        .header a:hover{
+            text-decoration: underline;
+
+        }
+
+        .header img{
+            width: 20px;
+            /* radious를 width의 절반만 주면 동그랗게 */
+            border-radius: 10px;
+
+        }
+
+        .header img:hover{
+            /*이미지에 효과 주기*/
+            filter: brightness(70%); /*밝기 조절*/
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a href="">Gmail</a>
+            <a href="">이미지</a>
+            <a href="">
+                <img src="https://cdn-icons-png.flaticon.com/512/1067/1067331.png" alt="">
+            </a>
+            <a href="">
+                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/menu-1899373-1606812.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="logo_box">
+        <img width="300px" src="https://blog.kakaocdn.net/dn/HMdmn/btreoUeKrzJ/EidJMlq4N5y0EQMbPR94H1/%EA%B5%AC%EA%B8%80%20%EB%A1%9C%EA%B3%A0.png?attach=1&knm=img.png" alt="">
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .benner{
+            border: 2px solid red;
+            position: relative;
+        }
+
+        .text{
+            /* 해당 태그가 z축 방향으로 뜸*/
+            /* 해당 태그의 부모가 position: relative 여야 정상 동작 */
+            position: absolute;
+            font-size: 30px;
+            color: azure;
+            font-weight: bold;
+
+            /*부 모의 좌측 상단 모서리 기준으로 위치 조정*/
+
+            top: 50px;
+            left: 50px;
+
+
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- 기본적으로 태그 영역은 서로 겹치지 않는다. -->
+    <div class="benner">
+        <img src="./resources/images/배경화면2.jpg" alt="" width="100%">
+        <span class="text">석양이 진다</span>
+    </div>
+</body>
+</html>
