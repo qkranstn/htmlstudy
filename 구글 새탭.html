@@ -8,7 +8,7 @@
 
     <style>
         div{
-            border: 1px solid black;
+            border: 0px solid black;
         }
 
         .header{
@@ -40,13 +40,66 @@
         .header img{
             width: 20px;
             /* radious를 width의 절반만 주면 동그랗게 */
-            border-radius: 10px;
+            border-radius: 7px;
 
         }
 
         .header img:hover{
             /*이미지에 효과 주기*/
             filter: brightness(70%); /*밝기 조절*/
+            background-color: gainsboro;
+        }
+
+        .logo_box{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+            padding-bottom: 10px;
+
+        }
+
+        .search-box{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .search-box > input{
+            width: 400px;
+            border: 0;
+            box-shadow: 0px 0px 4px 2px #cccccc;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .icon-container{
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .icon-box{
+            width: 600px;
+            display: flex;
+            /* 한줄 초과시 줄바꿈 되도록 함 */
+            flex-wrap: wrap;
+        }
+
+        .icon{
+            width: calc(100%/5);
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
+
+        .icon:hover{
+            background-color: #ddd;
         }
     </style>
 
@@ -67,6 +120,58 @@
 
     <div class="logo_box">
         <img width="300px" src="https://blog.kakaocdn.net/dn/HMdmn/btreoUeKrzJ/EidJMlq4N5y0EQMbPR94H1/%EA%B5%AC%EA%B8%80%20%EB%A1%9C%EA%B3%A0.png?attach=1&knm=img.png" alt="">
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder=" Goolge 검색 또는 URL 입력">
+    </div>
+
+    <div class="icon-container">
+        <div class="icon-box">
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="https://w7.pngwing.com/pngs/957/1022/png-transparent-youtube-icon-play-button-youtube-icon-logo-app-play-button.png" alt="">
+                <span>youtube</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+            <div class="icon">
+                <img width="30%" src="./resources/images/네이버.jpg" alt="">
+                <span>naver</span>
+            </div>
+        
+
+        </div>
+
     </div>
 
     
